@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>hello,world!</h1>
+    <h1>bye bye</h1>
 
   </div>
 </template>
@@ -15,3 +15,8 @@ export default {
   }
 }
 </script>
+<style  scoped>
+ h1{
+   color: blue;
+ }
+</style>
