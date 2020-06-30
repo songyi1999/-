@@ -4,17 +4,19 @@
 
   </div>
 </template>
-
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
+import { TimelineLite } from 'gsap'
 
-    }
+export default {
+  mounted () {
+    const timeline = new TimelineLite()
+    this.$nextTick(function () {
+      timeline.to('h1', 5, {x: 100})
+    })
   }
 }
 </script>
+
 <style  scoped>
  h1{
    color: blue;
